@@ -20,6 +20,5 @@
     <string name="song_count">Số bài hát:</string>
     <string name="choose_playlist">Choose playlist</string>
     <string name="about">About</string>
-
-
+    <string name="sprint_planning">Sprint Planning</string>
 </resources>
