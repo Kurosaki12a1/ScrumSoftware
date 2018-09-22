@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">ScrumSoftware</string>
+    <string name="manifest">Manifest</string>
+
+    <string name="content">Content</string>
+
+    <string name="nav_logout">Logout</string>
+    <string name="nav_upload">Upload</string>
+    <string name="nav_settings">Change Password</string>
+    <string name="home">Home</string>
+    <string name="playlists">Playlists</string>
+    <string name="songs">Songs</string>
+    <string name="library">Library</string>
+    <string name="rememberPassword">Nhớ mật khẩu</string>
+    <string name="explore">Explore</string>
+    <string name="search">Search</string>
+    <string name="profle">Profile</string>
+    <string name="playlist_name">Tên playlist:</string>
+    <string name="example">Example</string>
+    <string name="song_count">Số bài hát:</string>
+    <string name="choose_playlist">Choose playlist</string>
+    <string name="about">About</string>
+
+
 </resources>
