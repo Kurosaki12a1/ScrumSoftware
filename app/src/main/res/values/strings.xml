@@ -34,7 +34,7 @@
 
 
 
-  <!--  <string name="nav_logout">Logout</string>
+    <string name="nav_logout">Logout</string>
     <string name="nav_upload">Upload</string>
     <string name="nav_settings">Change Password</string>
     <string name="home">Home</string>
@@ -50,7 +50,7 @@
     <string name="song_count">Số bài hát:</string>
     <string name="choose_playlist">Choose playlist</string>
     <string name="about">About</string>
-    <string name="sprint_planning">Sprint Planning</string>-->
+    <string name="sprint_planning">Sprint Planning</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
