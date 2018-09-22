@@ -1,6 +1,7 @@
 package com.bku.scrumsoftware.Activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,8 +13,9 @@ import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
 import com.bku.scrumsoftware.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity implements MeetingDetailFragment.OnFragmentInteractionListener{
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -21,6 +23,8 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
         initUI();
@@ -49,6 +53,11 @@ public class DetailActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
 
         transaction.commit();
+
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
 
     }
 }
