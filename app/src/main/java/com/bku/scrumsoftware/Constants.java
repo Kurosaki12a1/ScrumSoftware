@@ -6,7 +6,7 @@ public class Constants {
     }
 
     public interface DetailConstants {
-        String MEETING = "meeting";
+        String MEETING = "Meeting";
     }
 
 }
