@@ -11,10 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bku.scrumsoftware.Activity.DetailActivity;
+
+import com.bku.scrumsoftware.Constants;
+
 import com.bku.scrumsoftware.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
 import butterknife.OnClick;
 
 /**
@@ -22,34 +26,29 @@ import butterknife.OnClick;
  */
 
 public class ContentFragment extends Fragment {
+    @BindView(R.id.cardViewSprintPlanning)
+    CardView cardViewSprintPlanning;
 
-   /* @BindView(R.id.cardViewMeetings)
-    CardView mMeeting;*/
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_content, container, false);
-        ButterKnife.bind(this,view);
-        return null;
+        View v = inflater.inflate(R.layout.fragment_content, container, false);
+        ButterKnife.bind(this, v);
+
+        return v;
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-       /* mMeeting = view.findViewById(R.id.cardViewMeetings);
-        mMeeting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra("type","Meeting");
-                startActivity(i);
-            }
-        });*/
+        
     }
 
-    /*@OnClick(R.id.cardViewMeetings)
-    public void viewMeetings(){
-
-    }*/
+    @OnClick(R.id.cardViewSprintPlanning)
+    public void onClickViewSprint(){
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.MEETING);
+        startActivity(intent);
+    }
 }

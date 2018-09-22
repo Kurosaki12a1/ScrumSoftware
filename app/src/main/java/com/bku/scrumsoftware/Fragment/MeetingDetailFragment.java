@@ -3,12 +3,19 @@ package com.bku.scrumsoftware.Fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import com.bku.scrumsoftware.Adapter.MeetingAdapter;
 import com.bku.scrumsoftware.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +36,11 @@ public class MeetingDetailFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    @BindView(R.id.lvDay)
+    ListView lvDay;
+
+    MeetingAdapter mAdapter;
 
     public MeetingDetailFragment() {
         // Required empty public constructor
@@ -65,7 +77,10 @@ public class MeetingDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_meeting_detail, container, false);
+        View v = inflater.inflate(R.layout.fragment_meeting_detail, container, false);
+        ButterKnife.bind(this, v);
+
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -90,6 +105,14 @@ public class MeetingDetailFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mAdapter = new MeetingAdapter(getContext());
+        lvDay.setAdapter(mAdapter);
+
     }
 
     /**
