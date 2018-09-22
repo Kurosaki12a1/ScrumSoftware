@@ -31,7 +31,166 @@
         android:layout_height="0dp"
         android:layout_weight="7">
 
-       
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/Row1Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+
+                    />
+                <TextView
+
+                    android:id="@+id/Row1Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+            <TextView
+                android:id="@+id/Row2Column1"
+                android:layout_height="match_parent"
+                android:maxLines="10"
+                android:background="@drawable/custom_border_table"
+                android:textColor="@color/colorWhite"
+                />
+
+            <TextView
+
+                android:id="@+id/Row2Column2"
+                android:layout_height="match_parent"
+                android:maxLines="10"
+                />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/Row3Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/Row3Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/Row4Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/Row4Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/Row5Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/Row5Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/Row6Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/Row6Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/Row7Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/Row7Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/Row8Column1"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+                    android:background="@drawable/custom_border_table"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/Row8Column2"
+                    android:layout_height="match_parent"
+                    android:maxLines="10"
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+
 
     </RelativeLayout>
 

@@ -13,9 +13,28 @@
     <string name="introduce4_first">Responding to change</string>
     <string name="introduce4_end">over following a plain</string>
 
+    <string name="row1col1">What</string>
+    <string name="row2col1">Strategic Planning</string>
+    <string name="row3col1">Tactical Planning</string>
+    <string name="row4col1">When</string>
+    <string name="row5col1">Time Box</string>
+    <string name="row6col1">Leading role</string>
+    <string name="row7col1">Actions</string>
+    <string name="row8col1">Output</string>
 
 
-    <string name="nav_logout">Logout</string>
+    <string name="mon1_col2_row1">Planning Topic 1 (What)</string>
+    <string name="mon1_col2_row2">Product Owner (Explain the Product Vision)</string>
+    <string name="mon1_col2_row3">Dev-Team (Scrum Master facilitates)</string>
+    <string name="mon1_col2_row4">Sprint Start</string>
+    <string name="mon1_col2_row5">Max : 2 hours</string>
+    <string name="mon1_col2_row6">Dev-team,Scrum Master,Product Owner</string>
+    <string name="mon1_col2_row7">Product Owner will present the maintained Product Backlog. The Dev-Team can get the size of the Stories (L,M,S) , they can get the order based on risk and customer valie . Team members will ask to clarify Requirements.</string>
+    <string name="mon1_col2_row8">Backlog Items e.g User Stories , Selected potential Product Backlog Items, Acceptance Criteria</string>
+
+
+
+  <!--  <string name="nav_logout">Logout</string>
     <string name="nav_upload">Upload</string>
     <string name="nav_settings">Change Password</string>
     <string name="home">Home</string>
@@ -31,7 +50,7 @@
     <string name="song_count">Số bài hát:</string>
     <string name="choose_playlist">Choose playlist</string>
     <string name="about">About</string>
-    <string name="sprint_planning">Sprint Planning</string>
+    <string name="sprint_planning">Sprint Planning</string>-->
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
