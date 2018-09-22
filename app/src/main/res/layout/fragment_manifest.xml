@@ -1,6 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTxt"
+        android:text="Welcome to Scrum Agile"
+        android:textSize="@dimen/textSizeWelcome"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/ic_logo"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:layout_gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+      >
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/introduceTxt"
+                android:textSize="@dimen/textSizeIntroduce"
+
+                />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:id="@+id/introduceTxt1"
+                android:layout_below="@+id/introduceTxt"
+                android:textSize="@dimen/textSizeIntroduce"
+
+                />
+
+
+       <!-- <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:id="@+id/introduceTxt1"
+            android:layout_below="@+id/introduceTxt"
+            android:textSize="@dimen/textSizeIntroduce"
+            android:textStyle="bold"
+            android:text="@string/introduce2_first"
+            />-->
+
+   <!-- <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduceTxtLine1"
+        android:textSize="@dimen/textSizeIntroduce"
+        android:layout_toEndOf="@+id/introduceTxt"
+        android:text="@string/introduce1_end"
+         />-->
+
+
+    <!--<TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/introduceTxt1Line1"
+        android:layout_below="@+id/introduceTxt"
+        android:textSize="@dimen/textSizeIntroduce"
+        android:layout_toEndOf="@+id/introduceTxt1"
+        android:text="@string/introduce2_end"
+        />-->
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduceTxt2"
+        android:layout_below="@+id/introduceTxt1"
+        android:textSize="@dimen/textSizeIntroduce"
+
+        />
+
+ <!--   <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/introduceTxt2Line1"
+        android:layout_below="@+id/introduceTxt1"
+        android:textSize="@dimen/textSizeIntroduce"
+        android:layout_toEndOf="@+id/introduceTxt2"
+        android:text="@string/introduce3_end"
+        />-->
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduceTxt3"
+        android:layout_below="@+id/introduceTxt2"
+        android:textSize="@dimen/textSizeIntroduce"
+
+        />
+
+   <!-- <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/introduceTxt3Line1"
+        android:layout_below="@+id/introduceTxt2"
+        android:textSize="@dimen/textSizeIntroduce"
+        android:text="@string/introduce4_end"
+        android:layout_toEndOf="@+id/introduceTxt3"-->
+        />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -4,6 +4,17 @@
 
     <string name="content">Content</string>
 
+    <string name="introduce1_first">Individuals and interactions</string>
+    <string name="introduce1_end">over processes and tools</string>
+    <string name="introduce2_first">Working software</string>
+    <string name="introduce2_end">over comprehensive documentation</string>
+    <string name="introduce3_first">Custom collaboration</string>
+    <string name="introduce3_end">over contract negotiation</string>
+    <string name="introduce4_first">Responding to change</string>
+    <string name="introduce4_end">over following a plain</string>
+
+
+
     <string name="nav_logout">Logout</string>
     <string name="nav_upload">Upload</string>
     <string name="nav_settings">Change Password</string>
