@@ -17,7 +17,7 @@
             android:id="@+id/txtTab"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/home"
+            android:text="@string/manifest"
             android:textColor="@color/colorWhite"
             android:textSize="28sp"
             android:fontFamily="sans-serif-medium"
