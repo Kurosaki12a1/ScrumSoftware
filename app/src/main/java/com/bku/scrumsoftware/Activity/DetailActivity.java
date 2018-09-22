@@ -50,7 +50,6 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
         transaction.replace(R.id.container, replaceFragment);
-        transaction.addToBackStack(null);
 
         transaction.commit();
 
