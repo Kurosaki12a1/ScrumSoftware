@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ScrumSoftware</string>
+    <string name="sprint_planning">Sprint Planning</string>
 </resources>
