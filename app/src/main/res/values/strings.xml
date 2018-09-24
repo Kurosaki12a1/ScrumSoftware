@@ -13,6 +13,8 @@
     <string name="introduce4_first">Responding to change</string>
     <string name="introduce4_end">over following a plain</string>
 
+    <string name="next_btn">Click go to next page</string>
+
     <string name="row1col1">What</string>
     <string name="row2col1">Strategic Planning</string>
     <string name="row3col1">Tactical Planning</string>
@@ -23,6 +25,7 @@
     <string name="row8col1">Output</string>
 
 
+    <!-- Monday Planning Topic 1 (WHAT)-->
     <string name="mon1_col2_row1">Planning Topic 1 (What)</string>
     <string name="mon1_col2_row2">Product Owner (Explain the Product Vision)</string>
     <string name="mon1_col2_row3">Dev-Team (Scrum Master facilitates)</string>
@@ -32,23 +35,29 @@
     <string name="mon1_col2_row7">Product Owner will present the maintained Product Backlog. The Dev-Team can get the size of the Stories (L,M,S) , they can get the order based on risk and customer valie . Team members will ask to clarify Requirements.</string>
     <string name="mon1_col2_row8">Backlog Items e.g User Stories , Selected potential Product Backlog Items, Acceptance Criteria</string>
 
+    <!-- Monday Planning Topic 2 (How) -->
+    <string name="mon1_col3_row1">Planning Topic 2 (How)</string>
+    <string name="mon1_col3_row2">Dev-Team</string>
+    <string name="mon1_col3_row3">Dev-Team (Scrum Master facilitates)</string>
+    <string name="mon1_col3_row4">Sprint Start</string>
+    <string name="mon1_col3_row5">Max : 2 hours</string>
+    <string name="mon1_col3_row6">Dev-team,Scrum Master</string>
+    <string name="mon1_col3_row7">Create initial tasks, estimation ( maybe with Planning Poker )  \n Discussion about design and architecture</string>
+    <string name="mon1_col3_row8">Final Sprint Backlog : all initial Tasks for the upcoming Spring that need to be done</string>
+
+    <!--Monday Sprint forecast -->
+
+    <string name="mon1_col4_row1">Spring forecast</string>
+    <string name="mon1_col4_row2">Dev-Team</string>
+    <string name="mon1_col4_row3">Dev-Team </string>
+    <string name="mon1_col4_row4"> </string>
+    <string name="mon1_col4_row5">Max : 2 hours</string>
+    <string name="mon1_col4_row6">Dev-team,Scrum Master,Product Owner</string>
+    <string name="mon1_col4_row7">Based on the velocity , the Development Team will prepare the forecast</string>
+    <string name="mon1_col4_row8">Forecast : The  Team "'s'" commitment for the Sprint Backlog</string>
 
 
-    <string name="nav_logout">Logout</string>
-    <string name="nav_upload">Upload</string>
-    <string name="nav_settings">Change Password</string>
-    <string name="home">Home</string>
-    <string name="playlists">Playlists</string>
-    <string name="songs">Songs</string>
-    <string name="library">Library</string>
-    <string name="rememberPassword">Nhớ mật khẩu</string>
-    <string name="explore">Explore</string>
-    <string name="search">Search</string>
-    <string name="profle">Profile</string>
-    <string name="playlist_name">Tên playlist:</string>
-    <string name="example">Example</string>
-    <string name="song_count">Số bài hát:</string>
-    <string name="choose_playlist">Choose playlist</string>
+
     <string name="about">About</string>
     <string name="sprint_planning">Sprint Planning</string>
 
