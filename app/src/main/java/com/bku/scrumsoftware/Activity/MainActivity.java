@@ -93,11 +93,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 welcomeTxt.setVisibility(View.VISIBLE);
-                imgLogo.setVisibility(View.VISIBLE);
-                Timer1.start();
+
+                Timer0.start();
             }
         }.start();
     }
+    CountDownTimer Timer0=new CountDownTimer(1000,500) {
+        @Override
+        public void onTick(long millisUntilFinished) {
+
+        }
+
+        @Override
+        public void onFinish() {
+            imgLogo.setVisibility(View.VISIBLE);
+            Timer1.start();
+        }
+    };
     CountDownTimer Timer1=new CountDownTimer(1000,500) {
         @Override
         public void onTick(long millisUntilFinished) {
