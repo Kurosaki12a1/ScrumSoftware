@@ -50,12 +50,52 @@
     <string name="mon1_col4_row1">Spring forecast</string>
     <string name="mon1_col4_row2">Dev-Team</string>
     <string name="mon1_col4_row3">Dev-Team </string>
-    <string name="mon1_col4_row4"> </string>
-    <string name="mon1_col4_row5">Max : 2 hours</string>
+    <string name="mon1_col4_row4">Sprint start</string>
+    <string name="mon1_col4_row5"> </string>
     <string name="mon1_col4_row6">Dev-team,Scrum Master,Product Owner</string>
     <string name="mon1_col4_row7">Based on the velocity , the Development Team will prepare the forecast</string>
     <string name="mon1_col4_row8">Forecast : The  Team "'s'" commitment for the Sprint Backlog</string>
 
+    <!-- Sprint goal communication -->
+
+    <string name="mon1_col5_row1">Spring Goal communication</string>
+    <string name="mon1_col5_row2">Dev-Team</string>
+    <string name="mon1_col5_row3">Dev-Team </string>
+    <string name="mon1_col5_row4">Sprint Start</string>
+    <string name="mon1_col5_row5">Define the Sprint Goal before and share the updates after planning</string>
+    <string name="mon1_col5_row6">Stakeholder,Product Owner</string>
+    <string name="mon1_col5_row7">Product Owner communicates the forecast to Stakeholder</string>
+    <string name="mon1_col5_row8">Product Vision</string>
+
+    <!-- Backlog Ordering -->
+    <string name="thu2_col2_row1">Backlog Ordering</string>
+    <string name="thu2_col2_row2">Product Owner</string>
+    <string name="thu2_col2_row3">Product Owner</string>
+    <string name="thu2_col2_row4">Middle of the second week</string>
+    <string name="thu2_col2_row5">Around 1-3 hours</string>
+    <string name="thu2_col2_row6">Product Owner,Stakeholder</string>
+    <string name="thu2_col2_row7">The Product Owner reviews the updated Product Backlog with the Priority e.g : with MosCoW based on the Customer need and value</string>
+    <string name="thu2_col2_row8">Revised Product Backlog and Release Plan</string>
+
+    <!-- Sprint Review -->
+    <string name="fri2_col2_row1">Sprint Review</string>
+    <string name="fri2_col2_row2">Product Owner</string>
+    <string name="fri2_col2_row3">Dev-Team (Scrum Master facilitates)</string>
+    <string name="fri2_col2_row4">Sprint End</string>
+    <string name="fri2_col2_row5">Max : 2 hours</string>
+    <string name="fri2_col2_row6">Dev-team,Scrum Master,Product Owner,Stakeholder</string>
+    <string name="fri2_col2_row7">The Dev-Team will show the work that they could finish at the real environment . Changes may come out of this meeting and will be added to the Product backlog. The product Owner will define which stories are finally DONE ( based on acceptance criteria and DoD).</string>
+    <string name="fri2_col2_row8">Product Owner will accept or reject the presented and showed features</string>
+
+    <!-- Start Workshop-->
+    <string name="tue1_col2_row1">Start Workshop</string>
+    <string name="tue1_col2_row2">Product Owner</string>
+    <string name="tue1_col2_row3">Product Owner</string>
+    <string name="tue1_col2_row4">Once at the beginning of the Project</string>
+    <string name="tue1_col2_row5">Depends on the project</string>
+    <string name="tue1_col2_row6">Product Owner, Stakeholder</string>
+    <string name="tue1_col2_row7">The product Owner will work together with the stakeholder to prepare the Backlog Items e.g User Stories. Product Owner and Stakeholder review the Product Backlog . They add , update , modify the new and available stories . They may use the Story mapping approach</string>
+    <string name="tue1_col2_row8">Story based on clarifications at the Product Backlog , Update Priority ( MoSCoW ) . \n Based on the customer needs</string>
 
 
     <string name="about">About</string>
