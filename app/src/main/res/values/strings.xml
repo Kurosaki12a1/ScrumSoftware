@@ -97,6 +97,36 @@
     <string name="tue1_col2_row7">The product Owner will work together with the stakeholder to prepare the Backlog Items e.g User Stories. Product Owner and Stakeholder review the Product Backlog . They add , update , modify the new and available stories . They may use the Story mapping approach</string>
     <string name="tue1_col2_row8">Story based on clarifications at the Product Backlog , Update Priority ( MoSCoW ) . \n Based on the customer needs</string>
 
+    <!-- Product Backlog refinement -->
+    <string name="mon2_col2_row1">Product Backlog refinement</string>
+    <string name="mon2_col2_row2">Product Owner</string>
+    <string name="mon2_col2_row3">Product Owner</string>
+    <string name="mon2_col2_row4">Second week , before Review</string>
+    <string name="mon2_col2_row5">max 10% capacity of the Development Team</string>
+    <string name="mon2_col2_row6">Product Owner, Stakeholder,Dev-Team</string>
+    <string name="mon2_col2_row7">The Product Owner also should spend his time with the Dev-Team and review the updated Product Backlog. Dev-Team can update the estimation with Points. Everybody in the Scrum Team has to understand the Customer needs</string>
+    <string name="mon2_col2_row8">Updated Product Backlog , estimation of the whole Product Backlog to keep it up to date.</string>
+
+    <!-- Pair Work -->
+    <string name="wed1_col2_row1">Pair Work</string>
+    <string name="wed1_col2_row2">Dev-Team</string>
+    <string name="wed1_col2_row3">Dev-Team</string>
+    <string name="wed1_col2_row4">During the Sprint</string>
+    <string name="wed1_col2_row5">Depends on the Dev-Team</string>
+    <string name="wed1_col2_row6">Dev-Team</string>
+    <string name="wed1_col2_row7">The Dev-Team can work with Pair programming . Other Dev-team members can verify which available solution is the best fit for customer needs.</string>
+    <string name="wed1_col2_row8">To increase the quality, productivity and get knowledge exchange.</string>
+
+    <!-- Sprint Retrospective -->
+    <string name="fri2_col3_row1">Sprint Retrospective</string>
+    <string name="fri2_col3_row2">Dev-Team (SM facilitates ) , Product Owner</string>
+    <string name="fri2_col3_row3">Dev-Team (SM facilitates ) , Product Owne</string>
+    <string name="fri2_col3_row4">Sprint End</string>
+    <string name="fri2_col3_row5">Max : 1.5 hours</string>
+    <string name="fri2_col3_row6">Dev-team,Scrum Master,Product Owner</string>
+    <string name="fri2_col3_row7">The Dev-Team will identify what was working well and what was not working during the last Sprint . This is basic for the continuous improvement and increasing the productivity and quality ( for the Scrum Team , Organisation and Product ). The Product Owner also should be involved.</string>
+    <string name="fri2_col3_row8">At least 3 impediments should be selected, which will be solved in the next Sprint.</string>
+
 
     <string name="about">About</string>
     <string name="sprint_planning">Sprint Planning</string>
