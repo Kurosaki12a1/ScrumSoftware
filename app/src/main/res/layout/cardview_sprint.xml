@@ -13,13 +13,14 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/planning" />
+            android:layout_height="200dp"
+            android:src="@drawable/sprint" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sprint_planning"
+            android:text="@string/sprint"
             android:fontFamily="sans-serif-condensed"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>

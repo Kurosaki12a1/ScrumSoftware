@@ -109,7 +109,7 @@ public class MeetingAdapter extends BaseAdapter {
 
         switch (position) {
             case 1:
-                String data1[] = {"Planning Topic 1", "Planning Topic 2", "Sprint Forecast", "Sprint Goal Communication"};
+                String data1[] = {"Monday", "Planning Topic 1","Planning Topic 2","Sprint Forecast","Sprint Goal Communication"};
                 ArrayAdapter<String> spinnerArrayAdapter1 = new ArrayAdapter<>
                         (mContext, android.R.layout.simple_spinner_item, data1);
                 spinnerArrayAdapter1.setDropDownViewResource(android.R.layout
@@ -136,41 +136,76 @@ public class MeetingAdapter extends BaseAdapter {
                 });*/
                 return v;
             case 2:
-            case 3:
-            case 4:
-            case 5:
-                String data2[] = {"Start Workshop"};
+                String data2[] = {"Tuesday", "Start Workshop"};
                 ArrayAdapter<String> spinnerArrayAdapter2 = new ArrayAdapter<>
                         (mContext, android.R.layout.simple_spinner_item, data2);
                 spinnerArrayAdapter2.setDropDownViewResource(android.R.layout
                         .simple_spinner_dropdown_item);
                 spinner.setAdapter(spinnerArrayAdapter2);
                 return v;
-            case 7:
-            case 8:
-            case 9:
-                String data3[] = {"Product Backlog refinement"};
+            case 3:
+                String data3[] = {"Wednesday", "Start Workshop"};
                 ArrayAdapter<String> spinnerArrayAdapter3 = new ArrayAdapter<>
                         (mContext, android.R.layout.simple_spinner_item, data3);
                 spinnerArrayAdapter3.setDropDownViewResource(android.R.layout
                         .simple_spinner_dropdown_item);
                 spinner.setAdapter(spinnerArrayAdapter3);
                 return v;
-            case 10:
-                String data4[] = {"Backlog ordering"};
+            case 4:
+                String data4[] = {"Thursday", "Start Workshop"};
                 ArrayAdapter<String> spinnerArrayAdapter4 = new ArrayAdapter<>
                         (mContext, android.R.layout.simple_spinner_item, data4);
                 spinnerArrayAdapter4.setDropDownViewResource(android.R.layout
                         .simple_spinner_dropdown_item);
                 spinner.setAdapter(spinnerArrayAdapter4);
                 return v;
-            case 11:
-                String data5[] = {"Sprint Retrospective", "Sprint Review"};
+            case 5:
+                String data5[] = {"Friday", "Start Workshop"};
                 ArrayAdapter<String> spinnerArrayAdapter5 = new ArrayAdapter<>
                         (mContext, android.R.layout.simple_spinner_item, data5);
                 spinnerArrayAdapter5.setDropDownViewResource(android.R.layout
                         .simple_spinner_dropdown_item);
                 spinner.setAdapter(spinnerArrayAdapter5);
+                return v;
+            case 7:
+                String data6[] = {"Monday", "Product Backlog refinement"};
+                ArrayAdapter<String> spinnerArrayAdapter6 = new ArrayAdapter<>
+                        (mContext, android.R.layout.simple_spinner_item, data6);
+                spinnerArrayAdapter6.setDropDownViewResource(android.R.layout
+                        .simple_spinner_dropdown_item);
+                spinner.setAdapter(spinnerArrayAdapter6);
+                return v;
+            case 8:
+                String data7[] = {"Tuesday", "Product Backlog refinement"};
+                ArrayAdapter<String> spinnerArrayAdapter7 = new ArrayAdapter<>
+                        (mContext, android.R.layout.simple_spinner_item, data7);
+                spinnerArrayAdapter7.setDropDownViewResource(android.R.layout
+                        .simple_spinner_dropdown_item);
+                spinner.setAdapter(spinnerArrayAdapter7);
+                return v;
+            case 9:
+                String data8[] = {"Wednesday", "Product Backlog refinement"};
+                ArrayAdapter<String> spinnerArrayAdapter8 = new ArrayAdapter<>
+                        (mContext, android.R.layout.simple_spinner_item, data8);
+                spinnerArrayAdapter8.setDropDownViewResource(android.R.layout
+                        .simple_spinner_dropdown_item);
+                spinner.setAdapter(spinnerArrayAdapter8);
+                return v;
+            case 10:
+                String data9[] = {"Thursday", "Backlog ordering"};
+                ArrayAdapter<String> spinnerArrayAdapter9 = new ArrayAdapter<>
+                        (mContext, android.R.layout.simple_spinner_item, data9);
+                spinnerArrayAdapter9.setDropDownViewResource(android.R.layout
+                        .simple_spinner_dropdown_item);
+                spinner.setAdapter(spinnerArrayAdapter9);
+                return v;
+            case 11:
+                String data10[] = {"Friday", "Sprint Retrospective", "Sprint Review"};
+                ArrayAdapter<String> spinnerArrayAdapter10 = new ArrayAdapter<>
+                        (mContext, android.R.layout.simple_spinner_item, data10);
+                spinnerArrayAdapter10.setDropDownViewResource(android.R.layout
+                        .simple_spinner_dropdown_item);
+                spinner.setAdapter(spinnerArrayAdapter10);
                 return v;
         }
 
