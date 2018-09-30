@@ -123,22 +123,22 @@ public class RoleFragment extends Fragment {
 
     @OnClick(R.id.btnDT)
     public void onDTClick() {
-        if (b1) {
-            b1 = false;
+        if (b2) {
+            b2 = false;
             txtDT.setVisibility(View.GONE);
         } else {
-            b1 = true;
+            b2 = true;
             txtDT.setVisibility(View.VISIBLE);
         }
     }
 
     @OnClick(R.id.btnPO)
     public void onPOClick() {
-        if (b1) {
-            b1 = false;
+        if (b3) {
+            b3 = false;
             txtPO.setVisibility(View.GONE);
         } else {
-            b1 = true;
+            b3 = true;
             txtPO.setVisibility(View.VISIBLE);
         }
     }
