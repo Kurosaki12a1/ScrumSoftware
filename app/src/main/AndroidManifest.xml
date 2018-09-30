@@ -22,6 +22,8 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Activity.ProductBacklogList"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Activity.SprintBacklogList"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <!--<activity
             android:name=".Activity.Main2Activity"

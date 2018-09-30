@@ -4,9 +4,6 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="25dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginEnd="5dp"
-    android:layout_marginTop="10dp"
     >
     <TextView
         android:id="@+id/product_backlog_item_id"

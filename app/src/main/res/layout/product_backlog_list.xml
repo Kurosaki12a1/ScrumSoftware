@@ -5,6 +5,9 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/product_backlog_listview"/>
+        android:id="@+id/product_backlog_listview"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp"
+        />
 
 </android.support.constraint.ConstraintLayout>
