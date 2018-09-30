@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -21,6 +22,12 @@ public class ProductBacklogList extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_backlog_list);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         List<ProductBacklogItem> itemList = getData();
         final ListView listview = findViewById(R.id.product_backlog_listview);

@@ -69,6 +69,9 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
             case Constants.DetailConstants.ARTIFACTS:
                 renderUI(ArtifactFragment.newInstance("",""));
                 toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
                 break;
             case Constants.DetailConstants.PRODUCT_BACKLOG_DETAIL:
                 renderUI(ProductBacklogDetailFragment.newInstance("", ""));
