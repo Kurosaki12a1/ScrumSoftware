@@ -12,24 +12,42 @@
         android:layout_height="wrap_content"
         android:text="@string/scrum_master"/>
 
+    <TextView
+        android:id="@+id/txtSM"
+        android:text="@string/scrum_master_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/btnDT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dev_team"/>
 
+    <TextView
+        android:id="@+id/txtDT"
+        android:text="@string/dev_team_cotent"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
 
     <Button
         android:id="@+id/btnPO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
         android:text="@string/product_owner"/>
 
     <TextView
-        android:id="@+id/txtRole"
+        android:id="@+id/txtPO"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="wrap_content"
+        android:text="@string/product_owner_content"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"/>
 
 </LinearLayout>

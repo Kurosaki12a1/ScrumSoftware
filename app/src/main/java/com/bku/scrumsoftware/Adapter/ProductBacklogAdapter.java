@@ -1,7 +1,10 @@
 package com.bku.scrumsoftware.Adapter;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.view.LayoutInflater;
+=======
+>>>>>>> 7ecced86782afda9a601d5ab0d11f365aa1d789a
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -37,6 +40,7 @@ public class ProductBacklogAdapter extends BaseAdapter {
     }
 
     @Override
+<<<<<<< HEAD
     public View getView(int i, View view, ViewGroup viewGroup) {
         ProductBacklogViewHolder holder;
         if (view == null) {
@@ -53,5 +57,24 @@ public class ProductBacklogAdapter extends BaseAdapter {
     }
     static class ProductBacklogViewHolder {
         TextView Id, Name, Priority;
+=======
+    public int getCount() {
+        return 0;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        return null;
+>>>>>>> 7ecced86782afda9a601d5ab0d11f365aa1d789a
     }
 }
