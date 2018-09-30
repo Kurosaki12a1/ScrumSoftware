@@ -10,12 +10,14 @@ import android.support.v7.widget.Toolbar;
 
 import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
+import com.bku.scrumsoftware.Fragment.PopUpDetailFragment;
 import com.bku.scrumsoftware.R;
+import com.bku.scrumsoftware.onListener.OnClickItemListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DetailActivity extends AppCompatActivity implements MeetingDetailFragment.OnFragmentInteractionListener{
+public class DetailActivity extends AppCompatActivity implements MeetingDetailFragment.OnFragmentInteractionListener ,OnClickItemListener {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -42,6 +44,10 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
                 renderUI(MeetingDetailFragment.newInstance("", ""));
                 toolbar.setTitle(Constants.DetailConstants.MEETING);
                 break;
+            case Constants.DetailConstants.POPUP:
+                renderUI(PopUpDetailFragment.newInstance(intent.getStringExtra(Constants.BundleConstants.POPUP_TYPE)));
+                toolbar.setTitle(Constants.DetailConstants.POPUP);
+                break;
             default:
         }
     }
@@ -57,6 +63,11 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onClickItem(String keyword) {
 
     }
 }
