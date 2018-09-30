@@ -1,6 +1,8 @@
 package com.bku.scrumsoftware;
 
-public class ProductBacklogItem {
+import java.io.Serializable;
+
+public class ProductBacklogItem implements Serializable {
     private String itemId, itemName, itemPriority;
     public ProductBacklogItem (String id, String name, String priority) {
         this.itemId = id;

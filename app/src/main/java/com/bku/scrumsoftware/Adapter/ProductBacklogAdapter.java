@@ -22,8 +22,8 @@ public class ProductBacklogAdapter extends BaseAdapter {
         layoutInflater = LayoutInflater.from(context);
     }
     @Override
-    public Object getItem(int i) {
-        return i;
+    public ProductBacklogItem getItem(int i) {
+        return itemList.get(i);
     }
 
     @Override
