@@ -13,23 +13,26 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:shrinkColumns="0"
+            android:shrinkColumns="1"
 
             >
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal"
                 >
                 <TextView
                     android:id="@+id/Row1Column1"
                     android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
 
                     />
                 <TextView
@@ -37,8 +40,9 @@
                     android:id="@+id/Row1Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
 
             </TableRow>
@@ -46,7 +50,7 @@
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal"
                 >
             <TextView
@@ -54,8 +58,10 @@
                 android:layout_height="match_parent"
                 android:maxLines="10"
                 android:background="@drawable/custom_border_table"
-                android:textColor="@color/colorWhite"
-                android:layout_weight="3"
+                android:textColor="@color/link_blue"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -63,15 +69,16 @@
                 android:id="@+id/Row2Column2"
                 android:layout_height="match_parent"
                 android:maxLines="10"
-                android:layout_weight="7"
+                android:layout_width="wrap_content"
                 android:scrollbars="vertical"
+                android:textColor="@color/colorBlack"
                 />
 
             </TableRow>
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal"
                 >
                 <TextView
@@ -79,88 +86,100 @@
                     android:layout_height="match_parent"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
                     />
 
                 <TextView
                     android:id="@+id/Row3Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
             </TableRow>
 
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/Row4Column1"
                     android:layout_height="match_parent"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
                     />
                 <TextView
                     android:id="@+id/Row4Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
             </TableRow>
 
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/Row5Column1"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
                     android:background="@drawable/custom_border_table"
                     android:maxLines="10"
-                    android:textColor="@color/colorWhite" />
+                    android:textColor="@color/link_blue"
+                    android:gravity="start"
+                    android:textStyle="bold"/>
                 <TextView
                     android:id="@+id/Row5Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
             </TableRow>
 
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/Row6Column1"
                     android:layout_height="match_parent"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
                     />
                 <TextView
                     android:id="@+id/Row6Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
             </TableRow>
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal">
 
                 <TextView
@@ -168,23 +187,25 @@
                     android:layout_height="match_parent"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
                     />
 
                 <TextView
                     android:id="@+id/Row7Column2"
                     android:layout_height="match_parent"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:layout_weight="7"
+                    android:maxLines="10"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
                     />
             </TableRow>
             <TableRow
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:weightSum="10"
+
                 android:orientation="horizontal">
 
                 <TextView
@@ -192,16 +213,19 @@
                     android:layout_height="match_parent"
                     android:maxLines="10"
                     android:background="@drawable/custom_border_table"
-                    android:textColor="@color/colorWhite"
-                    android:layout_weight="3"
+                    android:textColor="@color/link_blue"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textStyle="bold"
                     />
                 <TextView
                     android:id="@+id/Row8Column2"
                     android:layout_height="match_parent"
                     android:maxLines="10"
-                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorBlack"
+
                     />
             </TableRow>
 

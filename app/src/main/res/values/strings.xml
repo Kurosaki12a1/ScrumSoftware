@@ -15,14 +15,14 @@
 
     <string name="next_btn">Click go to next page</string>
 
-    <string name="row1col1">What</string>
-    <string name="row2col1">Strategic Planning</string>
-    <string name="row3col1">Tactical Planning</string>
-    <string name="row4col1">When</string>
-    <string name="row5col1">Time Box</string>
-    <string name="row6col1">Leading role</string>
-    <string name="row7col1">Actions</string>
-    <string name="row8col1">Output</string>
+    <string name="row1col1">What </string>
+    <string name="row2col1">Strategic \n Planning \t</string>
+    <string name="row3col1">Tactical \n Planning \t</string>
+    <string name="row4col1">When </string>
+    <string name="row5col1">Time Box </string>
+    <string name="row6col1">Leading \n role </string>
+    <string name="row7col1">Actions </string>
+    <string name="row8col1">Output </string>
 
 
     <!-- Monday Planning Topic 1 (WHAT)-->
