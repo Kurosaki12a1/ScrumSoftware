@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.bku.scrumsoftware.Constants;
+import com.bku.scrumsoftware.Fragment.ArtifactFragment;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
 import com.bku.scrumsoftware.Fragment.PopUpDetailFragment;
 import com.bku.scrumsoftware.Fragment.RoleFragment;
@@ -53,6 +54,9 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
                 renderUI(RoleFragment.newInstance("", ""));
                 toolbar.setTitle(Constants.DetailConstants.ROLE);
                 break;
+            case Constants.DetailConstants.ARTIFACTS:
+                renderUI(ArtifactFragment.newInstance("",""));
+                toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
             default:
                 break;
         }

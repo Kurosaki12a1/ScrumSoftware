@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="25dp">
+    <TextView
+        android:id="@+id/product_backlog_item_id"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="100"/>
+    <TextView
+        android:id="@+id/product_backlog_item_name"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="askfnodghsgng"/>
+    <TextView
+        android:id="@+id/product_backlog_item_priority"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:text="1"/>
+
+</LinearLayout>

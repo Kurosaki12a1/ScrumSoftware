@@ -10,6 +10,7 @@ public class Constants {
         String MEETING = "Meeting";
         String POPUP = "Popup";
         String ROLE = "Role";
+        String ARTIFACTS = "Artifacts";
     }
 
 }
