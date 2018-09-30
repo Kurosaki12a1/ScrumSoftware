@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 
 import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
@@ -30,6 +31,7 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
+
         initUI();
 
     }
@@ -44,14 +46,23 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
             case Constants.DetailConstants.MEETING:
                 renderUI(MeetingDetailFragment.newInstance("", ""));
                 toolbar.setTitle(Constants.DetailConstants.MEETING);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
                 break;
             case Constants.DetailConstants.POPUP:
                 renderUI(PopUpDetailFragment.newInstance(intent.getStringExtra(Constants.BundleConstants.POPUP_TYPE)));
                 toolbar.setTitle(Constants.DetailConstants.POPUP);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
                 break;
             case Constants.DetailConstants.ROLE:
                 renderUI(RoleFragment.newInstance("", ""));
                 toolbar.setTitle(Constants.DetailConstants.ROLE);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
                 break;
             default:
                 break;
@@ -75,5 +86,11 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
     @Override
     public void onClickItem(String keyword) {
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return true;
     }
 }
