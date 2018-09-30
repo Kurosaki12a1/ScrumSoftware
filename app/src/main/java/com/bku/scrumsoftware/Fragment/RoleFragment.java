@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.bku.scrumsoftware.R;
 
@@ -38,6 +39,8 @@ public class RoleFragment extends Fragment {
     Button btnDT;
     @BindView(R.id.btnPO)
     Button btnPO;
+    @BindView(R.id.txtRole)
+    TextView txtRole;
 
 
     public RoleFragment() {
@@ -102,17 +105,17 @@ public class RoleFragment extends Fragment {
 
     @OnClick(R.id.btnSM)
     public void onSMClick() {
-
+        txtRole.setText(getString(R.string.scrum_master_content));
     }
 
     @OnClick(R.id.btnDT)
     public void onDTClick() {
-
+        txtRole.setText(getString(R.string.dev_team_cotent));
     }
 
     @OnClick(R.id.btnPO)
     public void onPOClick() {
-
+        txtRole.setText(getString(R.string.product_owner_content));
     }
 
 }

@@ -141,4 +141,8 @@
     <string name="scrum_master">Scrum Master</string>
     <string name="dev_team">Development Team</string>
     <string name="product_owner">Product Owner</string>
+
+    <string name="scrum_master_content">Responsible for increasing productivity.\nResponsible for using the Scrum framework.\nFacilitate, serve and coach the Team, PO &amp; Organisation</string>
+    <string name="dev_team_cotent">Responsible for development.\nResponsible for quality.\nResponsible for dilivering the useful increment in each Sprint.\n Share progress &amp; remaining work.\nSelf organizing</string>
+    <string name="product_owner_content">Responsible for the ROI.\nResponsible for the order.\nResponsible for the product.\n Own the Product Backlog.\n Be sure that the PBL is transparent and visible.\nBe sure the Dev. Team understand the PBL items.</string>
 </resources>
