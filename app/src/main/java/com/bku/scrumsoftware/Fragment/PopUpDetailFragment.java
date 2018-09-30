@@ -85,7 +85,6 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
         PopUpDetailFragment fragment = new PopUpDetailFragment();
         Bundle args = new Bundle();
         args.putString(Type_Day, param1);
-        Log.d("TESTING", "onCreate:  asdadsas"+Type_Day + ".." +param1);
         fragment.setArguments(args);
         return fragment;
     }
@@ -95,7 +94,6 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             typeSprint = getArguments().getString(Type_Day);
-            Log.d("TESTING", "onCreate:    "+typeSprint);
         }
     }
 

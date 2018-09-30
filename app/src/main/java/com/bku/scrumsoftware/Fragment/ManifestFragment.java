@@ -63,13 +63,13 @@ public class ManifestFragment extends Fragment{
     }
 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        String Text1="<b>"+getString(R.string.introduce1_first)+"</b>"+getString(R.string.introduce1_end);
+        String Text1="<b>"+getString(R.string.introduce1_first)+" "+"</b>"+getString(R.string.introduce1_end);
         introduceTxt.setText(Html.fromHtml(Text1));
-        String Text2="<b>"+getString(R.string.introduce2_first)+"</b>"+getString(R.string.introduce2_end);
+        String Text2="<b>"+getString(R.string.introduce2_first)+"</b>"+" "+getString(R.string.introduce2_end);
         introduceTxt1.setText(Html.fromHtml(Text2));
-        String Text3="<b>"+getString(R.string.introduce3_first)+"</b>"+getString(R.string.introduce3_end);
+        String Text3="<b>"+getString(R.string.introduce3_first)+"</b>"+" "+getString(R.string.introduce3_end);
         introduceTxt2.setText(Html.fromHtml(Text3));
-        String Text4="<b>"+getString(R.string.introduce4_first)+"</b>"+getString(R.string.introduce4_end);
+        String Text4="<b>"+getString(R.string.introduce4_first)+"</b>"+" "+getString(R.string.introduce4_end);
         introduceTxt3.setText(Html.fromHtml(Text4));
         super.onViewCreated(view, savedInstanceState);
     }
