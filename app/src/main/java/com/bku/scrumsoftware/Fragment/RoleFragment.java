@@ -39,9 +39,16 @@ public class RoleFragment extends Fragment {
     Button btnDT;
     @BindView(R.id.btnPO)
     Button btnPO;
-    @BindView(R.id.txtRole)
-    TextView txtRole;
+    @BindView(R.id.txtSM)
+    TextView txtSM;
+    @BindView(R.id.txtDT)
+    TextView txtDT;
+    @BindView(R.id.txtPO)
+    TextView txtPO;
 
+    boolean b1 = false;
+    boolean b2 = false;
+    boolean b3 = false;
 
     public RoleFragment() {
         // Required empty public constructor
@@ -105,17 +112,35 @@ public class RoleFragment extends Fragment {
 
     @OnClick(R.id.btnSM)
     public void onSMClick() {
-        txtRole.setText(getString(R.string.scrum_master_content));
+        if (b1) {
+            b1 = false;
+            txtSM.setVisibility(View.GONE);
+        } else {
+            b1 = true;
+            txtSM.setVisibility(View.VISIBLE);
+        }
     }
 
     @OnClick(R.id.btnDT)
     public void onDTClick() {
-        txtRole.setText(getString(R.string.dev_team_cotent));
+        if (b1) {
+            b1 = false;
+            txtDT.setVisibility(View.GONE);
+        } else {
+            b1 = true;
+            txtDT.setVisibility(View.VISIBLE);
+        }
     }
 
     @OnClick(R.id.btnPO)
     public void onPOClick() {
-        txtRole.setText(getString(R.string.product_owner_content));
+        if (b1) {
+            b1 = false;
+            txtPO.setVisibility(View.GONE);
+        } else {
+            b1 = true;
+            txtPO.setVisibility(View.VISIBLE);
+        }
     }
 
 }
