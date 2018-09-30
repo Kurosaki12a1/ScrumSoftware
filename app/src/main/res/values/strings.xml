@@ -127,6 +127,31 @@
     <string name="fri2_col3_row7">The Dev-Team will identify what was working well and what was not working during the last Sprint . This is basic for the continuous improvement and increasing the productivity and quality ( for the Scrum Team , Organisation and Product ). The Product Owner also should be involved.</string>
     <string name="fri2_col3_row8">At least 3 impediments should be selected, which will be solved in the next Sprint.</string>
 
+    <!-- About -->
+    <string name="about_row1">Scrum meeting just gets mobilized with Scrool! \n \n Designed for Scrum practitioners who "'" re looking for an easy and convenient Scrum assistant.
+        Scrool , the mobile Scrum toolkit is now available for everybody. The application combines all the
+    basic tools required to kick start your Scrum process. \n \n
+    Scroll provides specific tools for various use of different roles throughout the Scrum process.
+    Whether you "'" re a developer , a Scrum Master or a PO , Scrool is able to assist you. \n \n
+    Scrool features essentital functions : \n \n
+        <b>PLANNING POKER*</b> \n
+        _Assist team make estimation for each user story. \n
+        _Optimize meeting outputs. \n \n
+        <b>TIMER</b> \n
+        _Organize and manage their meetings effectively . \n
+        _Optimize meeting outputs . \n
+        _Support team to deliver the best output in shortest time. \n \n
+        <b>CASH TIMER</b> \n
+        _Cash Timer calculates and converts lateness and extension into financial figures i.e money.
+        This conversion helps the Team visualize the cost of timebox violations , and understand the importance of timeliness.
+    </string>
+
+
+
+
+
+
+
 
     <string name="about">About</string>
     <string name="sprint">Sprint</string>
