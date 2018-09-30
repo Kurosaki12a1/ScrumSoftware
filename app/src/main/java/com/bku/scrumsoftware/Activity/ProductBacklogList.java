@@ -25,7 +25,12 @@ public class ProductBacklogList extends AppCompatActivity {
     }
     private List<ProductBacklogItem> getData() {
         List<ProductBacklogItem> itemList = new ArrayList<ProductBacklogItem>();
-        itemList.add(new ProductBacklogItem("01","FEATURE01","1"));
+        itemList.add(new ProductBacklogItem("AS-01","Scrum framework summary","1"));
+        itemList.add(new ProductBacklogItem("AS-01","Role summary","2"));
+        itemList.add(new ProductBacklogItem("AS-01","Meeting summary","3"));
+        itemList.add(new ProductBacklogItem("AS-01","Item Detail Accessing","4"));
+        itemList.add(new ProductBacklogItem("AS-01","Update information about Scrum/Agile and AxonActive","5"));
+        itemList.add(new ProductBacklogItem("AS-01","Update information about Scrum Framework","6"));
         return itemList;
     }
 }
