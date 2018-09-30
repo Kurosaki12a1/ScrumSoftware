@@ -1,11 +1,16 @@
 package com.bku.scrumsoftware.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.bku.scrumsoftware.Adapter.ProductBacklogAdapter;
+import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.ProductBacklogItem;
 import com.bku.scrumsoftware.R;
 
@@ -18,9 +23,25 @@ public class ProductBacklogList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_backlog_list);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         List<ProductBacklogItem> itemList = getData();
         final ListView listview = findViewById(R.id.product_backlog_listview);
         listview.setAdapter(new ProductBacklogAdapter(this,itemList));
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ProductBacklogItem item = (ProductBacklogItem) listview.getAdapter().getItem(position);
+                Intent intent = new Intent(view.getContext(), DetailActivity.class);
+                intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.PRODUCT_BACKLOG_DETAIL);
+                intent.putExtra(Constants.BundleConstants.PRODUCT_BACKLOG, item);
+                view.getContext().startActivity(intent);
+            }
+        });
 
     }
     private List<ProductBacklogItem> getData() {

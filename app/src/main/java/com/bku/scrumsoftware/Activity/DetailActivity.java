@@ -13,6 +13,7 @@ import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.Fragment.ArtifactFragment;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
 import com.bku.scrumsoftware.Fragment.PopUpDetailFragment;
+import com.bku.scrumsoftware.Fragment.ProductBacklogDetailFragment;
 import com.bku.scrumsoftware.Fragment.RoleFragment;
 import com.bku.scrumsoftware.R;
 import com.bku.scrumsoftware.onListener.OnClickItemListener;
@@ -68,6 +69,17 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
             case Constants.DetailConstants.ARTIFACTS:
                 renderUI(ArtifactFragment.newInstance("",""));
                 toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
+                break;
+            case Constants.DetailConstants.PRODUCT_BACKLOG_DETAIL:
+                renderUI(ProductBacklogDetailFragment.newInstance("", ""));
+                toolbar.setTitle(Constants.DetailConstants.PRODUCT_BACKLOG_DETAIL);
+                setSupportActionBar(toolbar);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowHomeEnabled(true);
+                break;
             default:
                 break;
         }
