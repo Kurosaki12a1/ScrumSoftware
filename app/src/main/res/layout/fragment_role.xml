@@ -17,6 +17,7 @@
         android:text="@string/scrum_master_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
         android:visibility="gone"/>
 
     <Button
@@ -28,6 +29,7 @@
     <TextView
         android:id="@+id/txtDT"
         android:text="@string/dev_team_cotent"
+        android:textColor="@color/colorBlack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
@@ -37,6 +39,7 @@
         android:id="@+id/btnPO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
         android:text="@string/product_owner"/>
 
     <TextView
