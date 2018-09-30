@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
 import com.bku.scrumsoftware.Fragment.PopUpDetailFragment;
+import com.bku.scrumsoftware.Fragment.RoleFragment;
 import com.bku.scrumsoftware.R;
 import com.bku.scrumsoftware.onListener.OnClickItemListener;
 
@@ -48,7 +49,12 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
                 renderUI(PopUpDetailFragment.newInstance(intent.getStringExtra(Constants.BundleConstants.POPUP_TYPE)));
                 toolbar.setTitle(Constants.DetailConstants.POPUP);
                 break;
+            case Constants.DetailConstants.ROLE:
+                renderUI(RoleFragment.newInstance("", ""));
+                toolbar.setTitle(Constants.DetailConstants.ROLE);
+                break;
             default:
+                break;
         }
     }
 

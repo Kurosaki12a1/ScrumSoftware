@@ -28,6 +28,8 @@ import butterknife.OnClick;
 public class ContentFragment extends Fragment {
     @BindView(R.id.cardViewSprintPlanning)
     CardView cardViewSprintPlanning;
+    @BindView(R.id.cardViewRole)
+    CardView cardViewRole;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,6 +51,13 @@ public class ContentFragment extends Fragment {
     public void onClickViewSprint(){
         Intent intent = new Intent(getActivity(), DetailActivity.class);
         intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.MEETING);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.cardViewRole)
+    public void onClickViewRole() {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.ROLE);
         startActivity(intent);
     }
 }

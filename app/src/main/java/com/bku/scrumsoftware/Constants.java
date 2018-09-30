@@ -9,6 +9,7 @@ public class Constants {
     public interface DetailConstants {
         String MEETING = "Meeting";
         String POPUP = "Popup";
+        String ROLE = "Role";
     }
 
 }
