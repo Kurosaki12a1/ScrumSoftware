@@ -141,6 +141,37 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
                     getString(R.string.mon1_col5_row4),
                     getString(R.string.mon1_col5_row5),getString(R.string.mon1_col5_row6),
                     getString(R.string.mon1_col5_row7),getString(R.string.mon1_col5_row8));
+        } else if( typeSprint.equals(getString(R.string.tue1_col2_row1))){
+            initRow2(getString(R.string.tue1_col2_row1)
+                    ,getString(R.string.tue1_col2_row2),getString(R.string.tue1_col2_row3),
+                    getString(R.string.tue1_col2_row4),
+                    getString(R.string.tue1_col2_row5),getString(R.string.tue1_col2_row6),
+                    getString(R.string.tue1_col2_row7),getString(R.string.tue1_col2_row8));
+        } else if( typeSprint.equals(getString(R.string.mon2_col2_row1))){
+            initRow2(getString(R.string.mon2_col2_row1)
+                    ,getString(R.string.mon2_col2_row2),getString(R.string.mon2_col2_row3),
+                    getString(R.string.mon2_col2_row4),
+                    getString(R.string.mon2_col2_row5),getString(R.string.mon2_col2_row6),
+                    getString(R.string.mon2_col2_row7),getString(R.string.mon2_col2_row8));
+        } else if( typeSprint.equals(getString(R.string.thu2_col2_row1))){
+            initRow2(getString(R.string.thu2_col2_row1)
+                    ,getString(R.string.thu2_col2_row2),getString(R.string.thu2_col2_row3),
+                    getString(R.string.thu2_col2_row4),
+                    getString(R.string.thu2_col2_row5),getString(R.string.thu2_col2_row6),
+                    getString(R.string.thu2_col2_row7),getString(R.string.thu2_col2_row8));
+        }
+        else if( typeSprint.equals(getString(R.string.fri2_col3_row1))){
+            initRow2(getString(R.string.fri2_col3_row1)
+                    ,getString(R.string.fri2_col3_row2),getString(R.string.fri2_col3_row3),
+                    getString(R.string.fri2_col3_row4),
+                    getString(R.string.fri2_col3_row5),getString(R.string.fri2_col3_row6),
+                    getString(R.string.fri2_col3_row7),getString(R.string.fri2_col3_row8));
+        }if( typeSprint.equals(getString(R.string.fri2_col2_row1))){
+            initRow2(getString(R.string.fri2_col2_row1)
+                    ,getString(R.string.fri2_col2_row2),getString(R.string.fri2_col2_row3),
+                    getString(R.string.fri2_col2_row4),
+                    getString(R.string.fri2_col2_row5),getString(R.string.fri2_col2_row6),
+                    getString(R.string.fri2_col2_row7),getString(R.string.fri2_col2_row8));
         }
 
 
