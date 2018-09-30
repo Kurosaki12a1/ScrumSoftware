@@ -4,12 +4,14 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.bku.scrumsoftware.R;
+import com.bku.scrumsoftware.onListener.OnClickItemListener;
 
 public class MeetingAdapter extends BaseAdapter {
     public static final int NUM_ELEMENTS = 12;
@@ -19,9 +21,12 @@ public class MeetingAdapter extends BaseAdapter {
 
     private Context mContext;
 
-    public MeetingAdapter(Context context) {
+    OnClickItemListener onClick;
+
+    public MeetingAdapter(Context context, OnClickItemListener onClick) {
         super();
         this.mContext = context;
+        this.onClick = onClick;
     }
 
     @Override
@@ -58,7 +63,49 @@ public class MeetingAdapter extends BaseAdapter {
 
         View v = LayoutInflater.from(mContext).inflate(R.layout.day_spinner, parent, false);
 
-        Spinner spinner = (Spinner) v;
+        final Spinner spinner = (Spinner) v;
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (spinner.getSelectedItem().toString()) {
+                    case "Planning Topic 1":
+                        onClick.onClickItem(mContext.getString(R.string.mon1_col2_row1));
+                        break;
+                    case "Planning Topic 2":
+                        onClick.onClickItem(mContext.getString(R.string.mon1_col3_row1));
+                        break;
+                    case "Sprint Forecast":
+                        onClick.onClickItem(mContext.getString(R.string.mon1_col4_row1));
+                        break;
+                    case "Sprint Goal Communication":
+                        onClick.onClickItem(mContext.getString(R.string.mon1_col5_row1));
+                        break;
+                    case "Start Workshop":
+                        onClick.onClickItem(mContext.getString(R.string.tue1_col2_row1));
+                        break;
+                    case "Product Backlog refinement":
+                        onClick.onClickItem(mContext.getString(R.string.mon2_col2_row1));
+                        break;
+                    case "Backlog ordering":
+                        onClick.onClickItem(mContext.getString(R.string.thu2_col2_row1));
+                        break;
+                    case "Sprint Retrospective":
+                        onClick.onClickItem(mContext.getString(R.string.fri2_col3_row1));
+                        break;
+                    case "Sprint Review":
+                        onClick.onClickItem(mContext.getString(R.string.fri2_col2_row1));
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         switch (position) {
             case 1:
@@ -68,6 +115,25 @@ public class MeetingAdapter extends BaseAdapter {
                 spinnerArrayAdapter1.setDropDownViewResource(android.R.layout
                         .simple_spinner_dropdown_item);
                 spinner.setAdapter(spinnerArrayAdapter1);
+                /*spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        switch (position){
+                            case 0:
+                                onClick.onClickItem(mContext.getString(R.string.mon1_col2_row1));
+                                break;
+                            case 1:
+                                onClick.onClickItem(mContext.getString(R.string.mon1_col3_row1));
+                                break;
+                            case 2:
+                                onClick.onClickItem(mContext.getString(R.string.mon1_col4_row1));
+                                break;
+                            case 3:
+                                onClick.onClickItem(mContext.getString(R.string.mon1_col5_row1));
+                                break;
+                        }
+                    }
+                });*/
                 return v;
             case 2:
                 String data2[] = {"Tuesday", "Start Workshop"};

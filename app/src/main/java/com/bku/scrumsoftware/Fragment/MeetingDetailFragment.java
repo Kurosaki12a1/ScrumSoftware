@@ -1,6 +1,7 @@
 package com.bku.scrumsoftware.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,8 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.bku.scrumsoftware.Activity.DetailActivity;
 import com.bku.scrumsoftware.Adapter.MeetingAdapter;
+import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.R;
+import com.bku.scrumsoftware.onListener.OnClickItemListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,7 +29,7 @@ import butterknife.ButterKnife;
  * Use the {@link MeetingDetailFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MeetingDetailFragment extends Fragment {
+public class MeetingDetailFragment extends Fragment implements OnClickItemListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -110,9 +114,17 @@ public class MeetingDetailFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mAdapter = new MeetingAdapter(getContext());
+        mAdapter = new MeetingAdapter(getContext(), this);
         lvDay.setAdapter(mAdapter);
 
+    }
+
+    @Override
+    public void onClickItem(String keyword) {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(Constants.BundleConstants.POPUP_TYPE, keyword);
+        intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.POPUP);
+        startActivity(intent);
     }
 
     /**
