@@ -14,13 +14,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:src="@drawable/product_backlog" />
+            android:src="@drawable/scrum_artifacts" />
 
         <TextView
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/product_backlog"
+            android:text="@string/scrum_artifact"
             android:fontFamily="sans-serif-condensed"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>

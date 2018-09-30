@@ -7,6 +7,6 @@
 
     <include layout="@layout/cardview_sprint"/>
 
-    <include layout="@layout/cardview_product_backlog" />
+    <include layout="@layout/cardview_srum_artifacts" />
 
 </LinearLayout>
