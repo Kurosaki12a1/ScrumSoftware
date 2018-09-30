@@ -3,9 +3,11 @@ package com.bku.scrumsoftware.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
 
 import com.bku.scrumsoftware.Adapter.ProductBacklogAdapter;
+import com.bku.scrumsoftware.Constants;
 import com.bku.scrumsoftware.ProductBacklogItem;
 import com.bku.scrumsoftware.R;
 
@@ -17,6 +19,12 @@ public class SprintBacklogList extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sprint_backlog_list);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         List<ProductBacklogItem> itemList = getData();
         final ListView listView = findViewById(R.id.sprint_backlog_listview);
@@ -31,5 +39,12 @@ public class SprintBacklogList extends AppCompatActivity {
         itemList.add(new ProductBacklogItem("AS-05","Update information about Scrum/Agile and AxonActive","5"));
         itemList.add(new ProductBacklogItem("AS-06","Update information about Scrum Framework","6"));
         return itemList;
+    }
+
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return true;
     }
 }

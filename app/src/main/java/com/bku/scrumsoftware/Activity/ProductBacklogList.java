@@ -54,4 +54,11 @@ public class ProductBacklogList extends AppCompatActivity {
         itemList.add(new ProductBacklogItem("AS-06","Update information about Scrum Framework","6"));
         return itemList;
     }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return true;
+    }
+
 }
