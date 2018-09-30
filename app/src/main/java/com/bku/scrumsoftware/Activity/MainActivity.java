@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         iniText();
-        makeTextAndButtonAppear();
+
     }
 
     @OnClick(R.id.nextBtn)
@@ -61,103 +61,13 @@ public class MainActivity extends AppCompatActivity {
         String Text4="<b>"+getString(R.string.introduce4_first)+"</b>"+" "+getString(R.string.introduce4_end);
         introduceTxt3.setText(Html.fromHtml(Text4));
         nextButton.setText(getString(R.string.next_btn));
+        welcomeTxt.setVisibility(View.VISIBLE);
+        imgLogo.setVisibility(View.VISIBLE);
+        introduceTxt.setVisibility(View.VISIBLE);
+        introduceTxt1.setVisibility(View.VISIBLE);
+        introduceTxt2.setVisibility(View.VISIBLE);
+        introduceTxt3.setVisibility(View.VISIBLE);
+        nextButton.setVisibility(View.VISIBLE);
     }
-
-    private void makeTextAndButtonAppear(){
-        final CountDownTimer Timer=new CountDownTimer(500,250) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-
-
-
-             /*   welcomeTxt.setVisibility(View.VISIBLE);
-                welcomeTxt.setText(String.valueOf(millisUntilFinished));
-                imgLogo.setVisibility(View.VISIBLE);*/
-                /*switch ((int) millisUntilFinished){
-                    case 500:
-                        welcomeTxt.setVisibility(View.VISIBLE);
-                        imgLogo.setVisibility(View.VISIBLE);
-                        break;
-                    case 1000:
-                        introduceTxt.setVisibility(View.VISIBLE);
-                        break;
-                    case 1500:
-                        introduceTxt1.setVisibility(View.VISIBLE);
-                        break;
-                    case 2000:
-                        introduceTxt3.setVisibility(View.VISIBLE);
-                        break;
-                }*/
-            }
-
-            @Override
-            public void onFinish() {
-                welcomeTxt.setVisibility(View.VISIBLE);
-
-                Timer0.start();
-            }
-        }.start();
-    }
-    CountDownTimer Timer0=new CountDownTimer(1000,500) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            imgLogo.setVisibility(View.VISIBLE);
-            Timer1.start();
-        }
-    };
-    CountDownTimer Timer1=new CountDownTimer(1000,500) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            introduceTxt.setVisibility(View.VISIBLE);
-            Timer2.start();
-        }
-    };
-    CountDownTimer Timer2=new CountDownTimer(1000,500) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            introduceTxt1.setVisibility(View.VISIBLE);
-            Timer3.start();
-        }
-    };
-    CountDownTimer Timer3=new CountDownTimer(1000,500) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            introduceTxt2.setVisibility(View.VISIBLE);
-            Timer4.start();
-        }
-    };
-    CountDownTimer Timer4=new CountDownTimer(1000,500) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            introduceTxt3.setVisibility(View.VISIBLE);
-            nextButton.setVisibility(View.VISIBLE);
-        }
-    };
-
 
 }
