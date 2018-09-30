@@ -1,53 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.RoleFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.RoleFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnSM"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/scrum_master"/>
-
-    <TextView
-        android:id="@+id/txtSM"
-        android:text="@string/scrum_master_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorBlack"
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/btnDT"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/dev_team"/>
-
-    <TextView
-        android:id="@+id/txtDT"
-        android:text="@string/dev_team_cotent"
-        android:textColor="@color/colorBlack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"/>
 
 
-    <Button
-        android:id="@+id/btnPO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorBlack"
-        android:text="@string/product_owner"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_scrum_master"
+            />
+        <Button
+            android:id="@+id/btnSM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrum_master"/>
 
-    <TextView
-        android:id="@+id/txtPO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/product_owner_content"
-        android:textColor="@color/colorBlack"
-        android:visibility="gone"/>
+        <TextView
+            android:id="@+id/txtSM"
+            android:text="@string/scrum_master_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="5dp"
+            />
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_dev_team"/>
+        <Button
+            android:id="@+id/btnDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_team"/>
+
+        <TextView
+            android:id="@+id/txtDT"
+            android:text="@string/dev_team_cotent"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"/>
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_product_owner"/>
+        <Button
+            android:id="@+id/btnPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="@string/product_owner"/>
+
+        <TextView
+            android:id="@+id/txtPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_owner_content"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"/>
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
 
 </LinearLayout>
+</ScrollView>
