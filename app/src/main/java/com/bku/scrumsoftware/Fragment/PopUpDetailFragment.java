@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,8 +25,6 @@ import butterknife.ButterKnife;
 public class PopUpDetailFragment extends Fragment implements OnClickItemListener {
 
 
-    @BindView(R.id.backArrow)
-    ImageView backArrow;
 
     @BindView(R.id.Row1Column1)
     TextView row1col1;
@@ -85,6 +85,7 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
         PopUpDetailFragment fragment = new PopUpDetailFragment();
         Bundle args = new Bundle();
         args.putString(Type_Day, param1);
+        Log.d("TESTING", "onCreate:  asdadsas"+Type_Day + ".." +param1);
         fragment.setArguments(args);
         return fragment;
     }
@@ -94,6 +95,7 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             typeSprint = getArguments().getString(Type_Day);
+            Log.d("TESTING", "onCreate:    "+typeSprint);
         }
     }
 
@@ -113,12 +115,38 @@ public class PopUpDetailFragment extends Fragment implements OnClickItemListener
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initRow1();
-        switch (typeSprint) {
-            case "mon1":
-                break;
-            default:
-                break;
+        setScrollRow2();
+        if(typeSprint.equals(getString(R.string.mon1_col2_row1))){
+            initRow2(getString(R.string.mon1_col2_row1)
+                    ,getString(R.string.mon1_col2_row2),getString(R.string.mon1_col2_row3),
+                    getString(R.string.mon1_col2_row4),
+                    getString(R.string.mon1_col2_row5),getString(R.string.mon1_col2_row6),
+                    getString(R.string.mon1_col2_row7),"");
         }
+
+    }
+
+    private void initRow2(String text1,String text2,String text3,String text4,String text5,String text6,String text7,String text8){
+        row1col2.setText(text1);
+        row2col2.setText(text2);
+        row3col2.setText(text3);
+        row4col2.setText(text4);
+        row5col2.setText(text5);
+        row6col2.setText(text6);
+        row7col2.setText(text7);
+        row8col2.setText(text8);
+    }
+
+    private void setScrollRow2(){
+        row1col2.setMovementMethod(new ScrollingMovementMethod());
+        row2col2.setMovementMethod(new ScrollingMovementMethod());
+        row3col2.setMovementMethod(new ScrollingMovementMethod());
+        row4col2.setMovementMethod(new ScrollingMovementMethod());
+        row5col2.setMovementMethod(new ScrollingMovementMethod());
+        row6col2.setMovementMethod(new ScrollingMovementMethod());
+        row7col2.setMovementMethod(new ScrollingMovementMethod());
+        row8col2.setMovementMethod(new ScrollingMovementMethod());
+
     }
 
     private void initRow1() {
