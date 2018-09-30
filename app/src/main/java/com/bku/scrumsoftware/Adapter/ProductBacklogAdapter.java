@@ -49,6 +49,10 @@ public class ProductBacklogAdapter extends BaseAdapter {
         } else {
             holder = (ProductBacklogViewHolder) view.getTag();
         }
+        ProductBacklogItem item = this.itemList.get(i);
+        holder.Id.setText(item.getItemId());
+        holder.Name.setText(item.getItemName());
+        holder.Priority.setText(item.getItemPriority());
         return view;
     }
     static class ProductBacklogViewHolder {

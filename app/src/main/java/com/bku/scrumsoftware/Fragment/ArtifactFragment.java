@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bku.scrumsoftware.Activity.ProductBacklogList;
+import com.bku.scrumsoftware.Activity.SprintBacklogList;
 import com.bku.scrumsoftware.R;
 
 public class ArtifactFragment extends Fragment {
@@ -43,6 +44,13 @@ public class ArtifactFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(),ProductBacklogList.class);
+                startActivity(intent);
+            }
+        });
+        mSprintBacklog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), SprintBacklogList.class);
                 startActivity(intent);
             }
         });
