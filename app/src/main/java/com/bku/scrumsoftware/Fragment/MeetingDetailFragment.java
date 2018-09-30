@@ -114,9 +114,13 @@ public class MeetingDetailFragment extends Fragment implements OnClickItemListen
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         mAdapter = new MeetingAdapter(getContext(), this);
         lvDay.setAdapter(mAdapter);
-
     }
 
     @Override

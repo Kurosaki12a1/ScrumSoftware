@@ -1,0 +1,83 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<LinearLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:layout_weight=\"5\"\n    android:background=\"@color/colorWhite\"\n    android:orientation=\"vertical\"\n    >\n    <RelativeLayout\n        android:id=\"@+id/rel1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"1\">\n        <TextView\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:id=\"@+id/welcomeTxt\"\n            android:text=\"Welcome to Scrum Agile\"\n            android:textSize=\"@dimen/textSizeWelcome\"\n            android:textStyle=\"bold\"\n            android:layout_centerHorizontal=\"true\"\n            android:layout_marginTop=\"50dp\"\n            android:visibility=\"invisible\"/>\n\n    </RelativeLayout>\n\n    <RelativeLayout\n        android:id=\"@+id/rel2\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"2\">\n        <ImageView\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"match_parent\"\n            android:id=\"@+id/imgLogo\"\n            android:src=\"@drawable/ic_logo\"\n            android:layout_centerInParent=\"true\"\n            android:scaleType=\"center\"\n            android:layout_gravity=\"center\"\n            android:visibility=\"invisible\"/>\n\n\n    </RelativeLayout>\n\n    <RelativeLayout\n        android:id=\"@+id/rel3\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"2\"\n        >\n\n        <TextView\n            android:layout_marginTop=\"50dp\"\n            android:layout_centerHorizontal=\"true\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:id=\"@+id/introduceTxt\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:visibility=\"invisible\"\n\n            />\n\n        <TextView\n            android:layout_centerHorizontal=\"true\"\n            android:layout_marginTop=\"10dp\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:layout_marginStart=\"5dp\"\n            android:id=\"@+id/introduceTxt1\"\n            android:layout_below=\"@+id/introduceTxt\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:visibility=\"invisible\"\n\n            />\n\n\n        <!-- <TextView\n             android:layout_marginTop=\"10dp\"\n             android:layout_width=\"wrap_content\"\n             android:layout_height=\"wrap_content\"\n             android:layout_marginStart=\"5dp\"\n             android:id=\"@+id/introduceTxt1\"\n             android:layout_below=\"@+id/introduceTxt\"\n             android:textSize=\"@dimen/textSizeIntroduce\"\n             android:textStyle=\"bold\"\n             android:text=\"@string/introduce2_first\"\n             />-->\n\n        <!-- <TextView\n             android:layout_marginTop=\"50dp\"\n             android:layout_marginStart=\"5dp\"\n             android:layout_width=\"wrap_content\"\n             android:layout_height=\"wrap_content\"\n             android:id=\"@+id/introduceTxtLine1\"\n             android:textSize=\"@dimen/textSizeIntroduce\"\n             android:layout_toEndOf=\"@+id/introduceTxt\"\n             android:text=\"@string/introduce1_end\"\n              />-->\n\n\n        <!--<TextView\n            android:layout_marginTop=\"10dp\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:layout_marginStart=\"5dp\"\n            android:id=\"@+id/introduceTxt1Line1\"\n            android:layout_below=\"@+id/introduceTxt\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:layout_toEndOf=\"@+id/introduceTxt1\"\n            android:text=\"@string/introduce2_end\"\n            />-->\n\n        <TextView\n            android:layout_marginTop=\"10dp\"\n            android:layout_centerHorizontal=\"true\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:id=\"@+id/introduceTxt2\"\n            android:layout_below=\"@+id/introduceTxt1\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:visibility=\"invisible\"\n\n            />\n\n        <!--   <TextView\n               android:layout_marginTop=\"10dp\"\n               android:layout_width=\"wrap_content\"\n               android:layout_height=\"wrap_content\"\n               android:layout_marginStart=\"5dp\"\n               android:id=\"@+id/introduceTxt2Line1\"\n               android:layout_below=\"@+id/introduceTxt1\"\n               android:textSize=\"@dimen/textSizeIntroduce\"\n               android:layout_toEndOf=\"@+id/introduceTxt2\"\n               android:text=\"@string/introduce3_end\"\n               />-->\n        <TextView\n            android:layout_centerHorizontal=\"true\"\n            android:layout_marginTop=\"10dp\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:id=\"@+id/introduceTxt3\"\n            android:layout_below=\"@+id/introduceTxt2\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:visibility=\"invisible\"\n\n            />\n\n        <Button\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:layout_centerHorizontal=\"true\"\n            android:id=\"@+id/nextBtn\"\n            android:layout_below=\"@+id/introduceTxt3\"\n            android:layout_marginTop=\"10dp\"\n            android:visibility=\"invisible\"/>\n\n        <!-- <TextView\n             android:layout_marginTop=\"10dp\"\n             android:layout_width=\"wrap_content\"\n             android:layout_height=\"wrap_content\"\n             android:layout_marginStart=\"5dp\"\n             android:id=\"@+id/introduceTxt3Line1\"\n             android:layout_below=\"@+id/introduceTxt2\"\n             android:textSize=\"@dimen/textSizeIntroduce\"\n             android:text=\"@string/introduce4_end\"\n             android:layout_toEndOf=\"@+id/introduceTxt3\"-->\n        />\n    </RelativeLayout>\n\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision 95f55c11ae4ec70d47df490caaa59c06b5af74fe)
++++ app/src/main/res/layout/activity_main.xml	(date 1538274575196)
+@@ -37,7 +37,7 @@
+             android:id="@+id/imgLogo"
+             android:src="@drawable/ic_logo"
+             android:layout_centerInParent="true"
+-            android:scaleType="center"
++            android:scaleType="fitCenter"
+             android:layout_gravity="center"
+             android:visibility="invisible"/>
+ 
+Index: app/src/main/res/layout/fragment_manifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<LinearLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:layout_weight=\"5\"\n    android:background=\"@color/colorWhite\"\n    android:orientation=\"vertical\"\n   >\n    <RelativeLayout\n        android:id=\"@+id/rel1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"1\">\n    <TextView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:id=\"@+id/welcomeTxt\"\n        android:text=\"Welcome to Scrum Agile\"\n        android:textSize=\"@dimen/textSizeWelcome\"\n        android:textStyle=\"bold\"\n        android:layout_centerHorizontal=\"true\"\n        android:layout_marginTop=\"50dp\"/>\n\n    </RelativeLayout>\n\n    <RelativeLayout\n        android:id=\"@+id/rel2\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"2\">\n        <ImageView\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"match_parent\"\n            android:id=\"@+id/imgLogo\"\n            android:src=\"@drawable/ic_logo\"\n            android:layout_centerInParent=\"true\"\n            android:scaleType=\"center\"\n            android:layout_gravity=\"center\"/>\n\n\n    </RelativeLayout>\n\n    <RelativeLayout\n        android:id=\"@+id/rel3\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"0dp\"\n        android:layout_weight=\"2\"\n      >\n\n            <TextView\n                android:layout_marginTop=\"50dp\"\n                android:layout_centerHorizontal=\"true\"\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"wrap_content\"\n                android:id=\"@+id/introduceTxt\"\n                android:textSize=\"@dimen/textSizeIntroduce\"\n\n                />\n\n            <TextView\n                android:layout_centerHorizontal=\"true\"\n                android:layout_marginTop=\"10dp\"\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"wrap_content\"\n                android:layout_marginStart=\"5dp\"\n                android:id=\"@+id/introduceTxt1\"\n                android:layout_below=\"@+id/introduceTxt\"\n                android:textSize=\"@dimen/textSizeIntroduce\"\n\n                />\n\n\n       <!-- <TextView\n            android:layout_marginTop=\"10dp\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:layout_marginStart=\"5dp\"\n            android:id=\"@+id/introduceTxt1\"\n            android:layout_below=\"@+id/introduceTxt\"\n            android:textSize=\"@dimen/textSizeIntroduce\"\n            android:textStyle=\"bold\"\n            android:text=\"@string/introduce2_first\"\n            />-->\n\n   <!-- <TextView\n        android:layout_marginTop=\"50dp\"\n        android:layout_marginStart=\"5dp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:id=\"@+id/introduceTxtLine1\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n        android:layout_toEndOf=\"@+id/introduceTxt\"\n        android:text=\"@string/introduce1_end\"\n         />-->\n\n\n    <!--<TextView\n        android:layout_marginTop=\"10dp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"5dp\"\n        android:id=\"@+id/introduceTxt1Line1\"\n        android:layout_below=\"@+id/introduceTxt\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n        android:layout_toEndOf=\"@+id/introduceTxt1\"\n        android:text=\"@string/introduce2_end\"\n        />-->\n\n    <TextView\n        android:layout_marginTop=\"10dp\"\n        android:layout_centerHorizontal=\"true\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:id=\"@+id/introduceTxt2\"\n        android:layout_below=\"@+id/introduceTxt1\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n\n        />\n\n <!--   <TextView\n        android:layout_marginTop=\"10dp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"5dp\"\n        android:id=\"@+id/introduceTxt2Line1\"\n        android:layout_below=\"@+id/introduceTxt1\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n        android:layout_toEndOf=\"@+id/introduceTxt2\"\n        android:text=\"@string/introduce3_end\"\n        />-->\n    <TextView\n        android:layout_centerHorizontal=\"true\"\n        android:layout_marginTop=\"10dp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:id=\"@+id/introduceTxt3\"\n        android:layout_below=\"@+id/introduceTxt2\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n\n        />\n\n   <!-- <TextView\n        android:layout_marginTop=\"10dp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginStart=\"5dp\"\n        android:id=\"@+id/introduceTxt3Line1\"\n        android:layout_below=\"@+id/introduceTxt2\"\n        android:textSize=\"@dimen/textSizeIntroduce\"\n        android:text=\"@string/introduce4_end\"\n        android:layout_toEndOf=\"@+id/introduceTxt3\"-->\n        />\n    </RelativeLayout>\n\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_manifest.xml	(revision 95f55c11ae4ec70d47df490caaa59c06b5af74fe)
++++ app/src/main/res/layout/fragment_manifest.xml	(date 1538274149791)
+@@ -36,7 +36,7 @@
+             android:id="@+id/imgLogo"
+             android:src="@drawable/ic_logo"
+             android:layout_centerInParent="true"
+-            android:scaleType="center"
++            android:scaleType="fitCenter"
+             android:layout_gravity="center"/>
+ 
+ 
+@@ -50,7 +50,7 @@
+       >
+ 
+             <TextView
+-                android:layout_marginTop="50dp"
++                android:layout_marginTop="30dp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+Index: .idea/codeStyles/Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyles/Project.xml	(date 1538271096781)
++++ .idea/codeStyles/Project.xml	(date 1538271096781)
+@@ -0,0 +1,29 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <Objective-C-extensions>
++      <file>
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Import" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Macro" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Typedef" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Enum" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Constant" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Global" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Struct" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="FunctionPredecl" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Function" />
++      </file>
++      <class>
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Property" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Synthesize" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InitMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="StaticMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InstanceMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="DeallocMethod" />
++      </class>
++      <extensions>
++        <pair source="cpp" header="h" fileNamingConvention="NONE" />
++        <pair source="c" header="h" fileNamingConvention="NONE" />
++      </extensions>
++    </Objective-C-extensions>
++  </code_scheme>
++</component>
+\ No newline at end of file

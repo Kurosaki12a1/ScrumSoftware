@@ -30,6 +30,8 @@ public class ContentFragment extends Fragment {
     CardView cardViewSprintPlanning;
     @BindView(R.id.cardViewRole)
     CardView cardViewRole;
+    @BindView(R.id.cardviewScrumArtifacts)
+    CardView cardViewSrumcArtifacts;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -58,6 +60,13 @@ public class ContentFragment extends Fragment {
     public void onClickViewRole() {
         Intent intent = new Intent(getActivity(), DetailActivity.class);
         intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.ROLE);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.cardviewScrumArtifacts)
+    public void onClickViewArtifacts() {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(Constants.BundleConstants.DETAIL_TYPE, Constants.DetailConstants.ARTIFACTS);
         startActivity(intent);
     }
 }

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.bku.scrumsoftware.Constants;
+import com.bku.scrumsoftware.Fragment.ArtifactFragment;
 import com.bku.scrumsoftware.Fragment.MeetingDetailFragment;
 import com.bku.scrumsoftware.Fragment.PopUpDetailFragment;
 import com.bku.scrumsoftware.Fragment.RoleFragment;
@@ -64,6 +65,9 @@ public class DetailActivity extends AppCompatActivity implements MeetingDetailFr
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 getSupportActionBar().setDisplayShowHomeEnabled(true);
                 break;
+            case Constants.DetailConstants.ARTIFACTS:
+                renderUI(ArtifactFragment.newInstance("",""));
+                toolbar.setTitle(Constants.DetailConstants.ARTIFACTS);
             default:
                 break;
         }
